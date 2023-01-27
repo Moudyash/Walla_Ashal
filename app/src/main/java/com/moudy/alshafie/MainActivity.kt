@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
 
 
     /**
-     * display notification every 8 hours
+     * display notification every 15 MINUTES
      */
     @SuppressLint("EnqueueWork", "InvalidPeriodicWorkRequestInterval")
     private fun fireWorkerTodisplayNotification() {
