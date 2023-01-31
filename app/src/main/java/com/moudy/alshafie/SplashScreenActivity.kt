@@ -14,4 +14,5 @@ class SplashScreenActivity : AppCompatActivity() {
         setContentView(binding.root)
         startActivity(Intent(this, StepsActivity::class.java))
         finish()    }
+
 }

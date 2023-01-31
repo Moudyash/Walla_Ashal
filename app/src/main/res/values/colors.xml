@@ -10,5 +10,6 @@
     <color name="grey">#CDCDCD</color>
     <color name="grey2">#D3D3D3</color>
     <color name="grey_20">#cccccc</color>
+    <color name="darkBg">#2B2A4A</color>
 
 </resources>
