@@ -4,20 +4,90 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".WelcomeActivity">
+    tools:context=".Ui.WelcomeActivity"
+    android:background="#653780"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/fireworks"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="50dp"
+            android:translationZ="4dp"
+            android:visibility="visible"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+
+            app:lottie_rawRes="@raw/fireworks" />
+
+        <TextView
+            android:id="@+id/welcome"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:text="Hi User, Welcome
+"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/medium"
+                android:layout_gravity="center"
+                android:layout_marginBottom="280dp"
+                android:gravity="center"
+            />
+        <TextView
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:text="
+To Walla Ashal"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/light"
+            android:layout_gravity="center"
+            android:layout_marginBottom="250dp"
+            android:gravity="center"
+            />
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/boy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_boy"
+            android:translationZ="5dp"
+            android:layout_marginBottom="5dp"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_shape"
+        android:layout_gravity="center"
+        android:layout_marginTop="92dp"
+        />
+
 <LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="228dp"
+    android:layout_height="200dp"
     android:background="#C885FC"
     android:gravity="center"
 
     android:layout_gravity="bottom"
+    android:translationZ="10dp"
     >
     <Button
+        android:id="@+id/btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Get Started"
+        android:textSize="18sp"
+        android:textColor="#333333"
+android:background="@drawable/welcomebtn"
+        android:elevation="8dp"
         />
 
 </LinearLayout>
+    </FrameLayout>
 </LinearLayout>

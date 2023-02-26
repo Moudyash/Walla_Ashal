@@ -3,6 +3,41 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/drawable-v24/btn.xml" value="0.1" />
+        <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/drawable-v24/getbtn.xml" value="0.1" />
+        <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/drawable-v24/rounded_btn.xml" value="0.1" />
+        <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/drawable-v24/shape_circle.xml" value="0.1635" />
+        <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/drawable/circle.xml" value="0.1585" />
+        <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/drawable/ic_arrow_back.xml" value="0.1585" />
+        <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/drawable/ic_bg.xml" value="0.204" />
+        <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/drawable/ic_email.xml" value="0.1585" />
+        <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/drawable/ic_empty.xml" value="0.204" />
+        <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/drawable/ic_pen.xml" value="0.204" />
+        <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/drawable/ic_settings.xml" value="0.1635" />
+        <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/drawable/ic_shape.xml" value="0.1085" />
+        <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/drawable/ic_whatsapp_orange.xml" value="0.1585" />
+        <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/drawable/profilephoto.xml" value="0.1" />
+        <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/drawable/step1.xml" value="0.1635" />
+        <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/drawable/welcomebtn.xml" value="0.1085" />
+        <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/activity_contact.xml" value="0.11302083333333333" />
+        <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/activity_contact_us.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/activity_create_your_avatar.xml" value="0.25052083333333336" />
+        <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/activity_help.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/activity_privacy_policy.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/activity_rate_us.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/activity_set_up_account.xml" value="0.264" />
+        <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/activity_splash_screen.xml" value="0.152" />
+        <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/activity_steps.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/activity_termsof_service.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/activity_welcome.xml" value="0.2571428571428571" />
+        <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/fragment_favorite.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/fragment_first.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/fragment_second.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/fragment_setting.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/item_stepper.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/menu/navbar.xml" value="0.253125" />
         <entry key="..\:/programming/AlShafie/app/src/main/res/drawable-v24/btn.xml" value="0.164" />
         <entry key="..\:/programming/AlShafie/app/src/main/res/drawable-v24/shape_circle.xml" value="0.1" />
         <entry key="..\:/programming/AlShafie/app/src/main/res/drawable/ic_plus.xml" value="0.1635" />

@@ -3,4 +3,12 @@
     <string name="notifiaction_id" translatable="false">notifiaction_id</string>
     <string name="GOT_IT" translatable="false">GOT IT</string>
     <string name="NEXT" translatable="false">NEXT</string>
+
+    <string name="send">Send</string>
+    <string name="MessageText">Message text</string>
+    <string name="WriteHere">Write here</string>
+    <string name="MessageTitle">Message Title</string>
+    <string name="ContactUs">Contact Us</string>
+    <string name="TermsofService">TermsOf Service</string>
+    <string name="hello_blank_fragment">hello_blank_fragment</string>
 </resources>

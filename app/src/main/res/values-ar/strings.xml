@@ -3,4 +3,10 @@
     <string name="app_name">ولا اسهل</string>
     <string name="GOT_IT" translatable="false">إبدأ الأن</string>
     <string name="NEXT" translatable="false">التالي</string>
+    <string name="send">إرسال</string>
+    <string name="MessageText">نص الرسالة</string>
+    <string name="WriteHere">اكتب هنا</string>
+    <string name="MessageTitle">عنوان الرسالة</string>
+    <string name="ContactUs">تواصل معنا</string>
+    <string name="TermsofService">شروط الاستخدام</string>
 </resources>

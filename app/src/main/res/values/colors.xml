@@ -11,5 +11,11 @@
     <color name="grey2">#D3D3D3</color>
     <color name="grey_20">#cccccc</color>
     <color name="darkBg">#2B2A4A</color>
+    <color name="text">#212121</color>
+    <color name="line">#F5F5F5</color>
+    <color name="errorRed">#FF1616</color>
+    <color name="main">#653780</color>
+    <color name="gery_text">#B5B5B5</color>
+    <color name="bartitle">#292D32</color>
 
 </resources>
