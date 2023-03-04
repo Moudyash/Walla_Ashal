@@ -1,19 +1,158 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Ui.Fragments.HomeFragment"
-    >
+    tools:context=".Ui.Fragments.HomeFragment">
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Home" />
-</LinearLayout>
+        >
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mediumpoppins"
+                    android:text="Hi , "
+                    android:textColor="@color/darktext"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/tvusername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mediumpoppins"
+                    android:text="User"
+                    android:textColor="#724EF8"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mediumpoppins"
+                android:text="Enjoy Your Time"
+                android:textColor="@color/darktext"
+                android:textSize="14sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="18dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="187dp"
+                    android:background="#653780">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="15dp">
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="230dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/semibold"
+                            android:text="Find a course you
+want to learn!"
+                            android:textColor="@color/white"
+                            android:textSize="26sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/boy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_boyonpen"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <LinearLayout
+                            android:id="@+id/playbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="28dp"
+                            android:layout_marginEnd="88dp"
+                            android:background="@drawable/playbtn"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:paddingEnd="15dp"
+                            app:layout_constraintEnd_toEndOf="@+id/textView"
+                            app:layout_constraintTop_toBottomOf="@+id/textView">
+
+                            <ImageView
+                                android:id="@+id/playicon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_play" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/bold"
+                                android:text="Play"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:src="@drawable/ic_stars" />
+
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/mediumpoppins"
+                android:text="Course for you"
+                android:textColor="@color/gery_text"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+
+                >
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/homerv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    tools:listitem="@layout/itemhome"
+                    android:clipToPadding="true"
+app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    />
+            </LinearLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="15dp"/>
+        </LinearLayout>
+    </ScrollView>3
 </FrameLayout>

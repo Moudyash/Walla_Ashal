@@ -17,5 +17,11 @@
     <color name="main">#653780</color>
     <color name="gery_text">#B5B5B5</color>
     <color name="bartitle">#292D32</color>
+    <color name="darktext">#20202F</color>
+    <color name="darktext2">#240F4F</color>
+    <color name="tabselected">#672CBC</color>
+    <color name="tabunselected">#8789A3</color>
+
+    <color name="purpeltext">#863ED5</color>
 
 </resources>

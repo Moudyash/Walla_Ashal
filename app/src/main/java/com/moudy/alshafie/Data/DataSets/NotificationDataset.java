@@ -4,14 +4,16 @@ import java.util.Random;
 
 public class NotificationDataset {
 
-    public static String getNof (){
 
 
-String[] word={"hello","new","test"};
+    public static String getNof() {
 
-               int idx = new Random().nextInt(word.length);
+
+        String[] word = {"hello", "new", "test"};
+
+        int idx = new Random().nextInt(word.length);
         String randomm = (word[idx]);
-        return  randomm;
+        return randomm;
 
     }
 

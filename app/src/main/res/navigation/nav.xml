@@ -9,31 +9,19 @@
         android:id="@+id/homeFragment"
         android:name="com.moudy.alshafie.Ui.Fragments.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" >
-        <action
-            android:id="@+id/action_homeFragment_to_learningFragment"
-            app:destination="@id/learningFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/learningFragment"
         android:name="com.moudy.alshafie.Ui.Fragments.LearningFragment"
         android:label="fragment_learning"
-        tools:layout="@layout/fragment_learning" >
-        <action
-            android:id="@+id/action_learningFragment_to_favoriteFragment"
-            app:destination="@id/favoriteFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_learning" />
     <fragment
         android:id="@+id/favoriteFragment"
         android:name="com.moudy.alshafie.Ui.Fragments.FavoriteFragment"
         android:label="fragment_favorite"
-        tools:layout="@layout/fragment_favorite" >
-        <action
-            android:id="@+id/action_favoriteFragment_to_settingFragment"
-            app:destination="@id/settingFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_favorite" />
     <fragment
-        android:id="@+id/settingFragment"
+        android:id="@+id/settingsFragment"
         android:name="com.moudy.alshafie.Ui.Fragments.SettingFragment"
         android:label="fragment_setting"
         tools:layout="@layout/fragment_setting" />

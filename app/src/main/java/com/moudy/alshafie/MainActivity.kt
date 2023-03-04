@@ -2,6 +2,7 @@ package com.moudy.alshafie
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
@@ -12,10 +13,6 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.work.ExistingPeriodicWorkPolicy
 import androidx.work.PeriodicWorkRequest
 import androidx.work.WorkManager
-import com.moudy.alshafie.Ui.Fragments.FavoriteFragment
-import com.moudy.alshafie.Ui.Fragments.HomeFragment
-import com.moudy.alshafie.Ui.Fragments.LearningFragment
-import com.moudy.alshafie.Ui.Fragments.SettingFragment
 import com.moudy.alshafie.Worker.recevier.NotificationWorker
 import com.moudy.alshafie.databinding.ActivityMainBinding
 import java.util.concurrent.TimeUnit
@@ -30,13 +27,20 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        navController= Navigation.findNavController(this,R.id.activity_main_nav_host_fragment)
-        setupWithNavController(binding.bottomNavigationView,navController)
+        window.decorView.apply {
+            // Hide both the navigation bar and the status bar.
+            systemUiVisibility = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+
+            // Enable the immersive mode.
+            // This will hide the navigation bar and the status bar until the user swipes up or down.
+            // You can remove this line if you don't want to enable immersive mode.
+            systemUiVisibility = systemUiVisibility or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
+        }
         fireWorkerTodisplayNotification()
 
+        navController = Navigation.findNavController(this, R.id.activity_main_nav_host_fragment)
+        setupWithNavController(binding.bottomNavigationView, navController)
     }
-
-
 
 /**
  * display notification every 15 MINUTES
@@ -60,3 +64,7 @@ private fun loadFragment(fragment: Fragment) {
     transaction.commit()
 }
 }
+
+
+
+

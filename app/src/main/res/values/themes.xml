@@ -48,6 +48,13 @@
 
     </style>
 
+    <style name="Toolbar.MainTitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">22sp</item>
+        <item name="android:fontFamily">@font/poppinsregularttf</item>
+        <item name="android:elevation">0dp</item>
+
+    </style>
+
 
 
 

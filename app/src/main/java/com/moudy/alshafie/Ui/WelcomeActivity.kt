@@ -25,7 +25,7 @@ class WelcomeActivity : AppCompatActivity() {
         val user:String = intent.getStringExtra("username").toString()
         binding.welcome.setText("Hi $user, Welcome")
     binding.btn.setOnClickListener(){
-                startActivity(Intent(this, MainActivity::class.java))
+                startActivity(Intent(this, MainActivity::class.java).putExtra("username",user))
 
     }
     }
