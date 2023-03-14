@@ -65,6 +65,10 @@ class StepsActivity : AppCompatActivity() {
                 viewPager!!.setPageTransformer(true, ForegroundToBackgroundPageTransformer())
                 viewPager!!.currentItem = current
             } else {
+                val sharedPreferences = getSharedPreferences("myPrefs", Context.MODE_PRIVATE)
+                val editor = sharedPreferences.edit()
+                editor.putBoolean("checked", true)
+                editor.apply()
                 startActivity(Intent(this@StepsActivity, SetUpAccountActivity::class.java))
                 finish()
             }

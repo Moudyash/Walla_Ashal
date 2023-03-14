@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">walla ashal</string>
+    <string name="app_name">Walla Ashal</string>
     <string name="notifiaction_id" translatable="false">notifiaction_id</string>
     <string name="GOT_IT" translatable="false">GOT IT</string>
     <string name="NEXT" translatable="false">NEXT</string>
@@ -10,5 +10,11 @@
     <string name="MessageTitle">Message Title</string>
     <string name="ContactUs">Contact Us</string>
     <string name="TermsofService">TermsOf Service</string>
-    <string name="hello_blank_fragment">hello_blank_fragment</string>
+    <string name="chooseyourphoto">Choose Your Photo</string>
+    <string name="or">"           OR            "</string>
+    <string name="pickupyouravatar" >Pickup Your Avatar</string>
+    <string name="getstarted">Get Started</string>
+    <string name="enteryourname">Enter Your Name</string>
+    <string name="hello_blank_fragment">hello blank fragment</string>
+
 </resources>

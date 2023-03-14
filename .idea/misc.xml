@@ -14,12 +14,21 @@
         <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/drawable/ic_cplay.xml" value="0.1475" />
         <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/drawable/ic_email.xml" value="0.1585" />
         <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/drawable/ic_empty.xml" value="0.204" />
+        <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/drawable/ic_favbtn.xml" value="0.149" />
+        <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/drawable/ic_favorite.xml" value="0.149" />
+        <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/drawable/ic_favoritefiled.xml" value="0.149" />
+        <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/drawable/ic_favoriteunfiled.xml" value="0.149" />
         <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/drawable/ic_pen.xml" value="0.204" />
         <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/drawable/ic_play.xml" value="0.1475" />
+        <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/drawable/ic_playbtn.xml" value="0.149" />
         <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/drawable/ic_settings.xml" value="0.1635" />
         <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/drawable/ic_shape.xml" value="0.1085" />
         <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/drawable/ic_stars.xml" value="0.1475" />
         <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/drawable/ic_whatsapp_orange.xml" value="0.1585" />
+        <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/drawable/photobg.xml" value="0.149" />
+        <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/drawable/photobg2.xml" value="0.149" />
+        <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/drawable/photobg3.xml" value="0.149" />
+        <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/drawable/photobg4.xml" value="0.149" />
         <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/drawable/playbtn.xml" value="0.1475" />
         <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/drawable/profilephoto.xml" value="0.1" />
         <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/drawable/step1.xml" value="0.1635" />
@@ -35,6 +44,7 @@
         <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/activity_create_your_avatar.xml" value="0.25052083333333336" />
         <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/activity_help.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/activity_photo.xml" value="0.264" />
         <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/activity_privacy_policy.xml" value="0.25025641025641027" />
         <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/activity_rate_us.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/activity_set_up_account.xml" value="0.264" />
@@ -43,6 +53,7 @@
         <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/activity_termsof_service.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/activity_welcome.xml" value="0.2571428571428571" />
         <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/fragment_beginner.xml" value="0.2" />
+        <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/fragment_expert.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/fragment_favorite.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/fragment_first.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/fragment_home.xml" value="0.264" />
@@ -52,6 +63,8 @@
         <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/fragment_setting.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/item_stepper.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/itembeginner.xml" value="0.264" />
+        <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/itemconversation.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/itemfavorite.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/itemhome.xml" value="0.2" />
         <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/toolbar.xml" value="0.253125" />
         <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/menu/navbar.xml" value="0.253125" />

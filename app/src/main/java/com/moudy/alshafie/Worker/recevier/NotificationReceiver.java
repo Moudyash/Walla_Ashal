@@ -19,7 +19,7 @@ import com.moudy.alshafie.R;
 
 
 public class NotificationReceiver extends BroadcastReceiver {
-    Uri soundUri = Uri.parse("android.resource://" + BuildConfig.APPLICATION_ID  + "/" + R.raw.custom_notification_sound);
+   // Uri soundUri = Uri.parse("android.resource://" + BuildConfig.APPLICATION_ID  + "/" + R.raw.custom_notification_sound);
     @Override
     public void onReceive(Context context, Intent intent1) {
 
@@ -38,7 +38,7 @@ public class NotificationReceiver extends BroadcastReceiver {
         builder.setStyle(new NotificationCompat.BigTextStyle());
 
         Uri uri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
-        builder.setSound(soundUri);
+       // builder.setSound(soundUri);
         builder.setPriority(NotificationCompat.PRIORITY_DEFAULT);
         builder.setContentIntent(pendingIntent);
 

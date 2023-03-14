@@ -65,7 +65,7 @@
                         android:layout_margin="15dp">
 
                         <TextView
-                            android:id="@+id/textView"
+                            android:id="@+id/randomtv"
                             android:layout_width="230dp"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/semibold"
@@ -83,35 +83,42 @@ want to learn!"
                             android:src="@drawable/ic_boyonpen"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
+                        <Button
+                            android:id="@+id/speakbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="88dp"
+                            android:layout_marginBottom="4dp"
+                            android:background="@drawable/playbtn"
+                            android:gravity="center"
+                            android:fontFamily="@font/mediumpoppins"
+                            android:text="Play"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="@+id/randomtv"
+                            app:layout_constraintHorizontal_bias="0.941"
+                            app:layout_constraintStart_toStartOf="parent">
 
-                        <LinearLayout
+                        </Button>
+                        <Button
                             android:id="@+id/playbtn"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="28dp"
                             android:layout_marginEnd="88dp"
+                            android:layout_marginBottom="4dp"
                             android:background="@drawable/playbtn"
                             android:gravity="center"
-                            android:orientation="horizontal"
-                            android:paddingEnd="15dp"
-                            app:layout_constraintEnd_toEndOf="@+id/textView"
-                            app:layout_constraintTop_toBottomOf="@+id/textView">
+                            android:fontFamily="@font/mediumpoppins"
+                            android:text="Play"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="@+id/randomtv"
+                            app:layout_constraintHorizontal_bias="0.941"
+                            app:layout_constraintStart_toStartOf="parent">
 
-                            <ImageView
-                                android:id="@+id/playicon"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/ic_play" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="@font/bold"
-                                android:text="Play"
-                                android:textColor="@color/black"
-                                android:textSize="16sp" />
-
-                        </LinearLayout>
+                        </Button>
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
 

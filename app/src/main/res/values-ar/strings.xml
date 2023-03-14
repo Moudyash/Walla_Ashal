@@ -9,4 +9,11 @@
     <string name="MessageTitle">عنوان الرسالة</string>
     <string name="ContactUs">تواصل معنا</string>
     <string name="TermsofService">شروط الاستخدام</string>
+    <string name="chooseyourphoto">اختر صورتك</string>
+    <string name="or">"           أو            "</string>
+    <string name="pickupyouravatar" >اختر الصورة الرمزية الخاصة بك</string>
+    <string name="getstarted">ابدأ الآن</string>
+    <string name="enteryourname">أدخل اسمك</string>
+    <string name="hello_blank_fragment">hello blank fragment</string>
+
 </resources>

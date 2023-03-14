@@ -6,4 +6,137 @@
     android:layout_height="match_parent"
     tools:context=".Ui.PhotoActivity">
 
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <Button
+            android:id="@+id/back"
+            android:layout_width="32dp"
+            android:layout_height="34dp"
+            android:background="@drawable/ic_arrow_back"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_gravity="center"
+            android:layout_marginBottom="200dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What's in the picture?"
+            android:fontFamily="@font/poppinsregular"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:translationZ="15dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="503dp"
+            android:gravity="center"
+            android:translationZ="8dp"
+            android:layout_marginTop="35dp">
+        <androidx.cardview.widget.CardView
+            android:layout_width="343dp"
+            android:layout_height="374dp"
+            app:cardCornerRadius="28dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="252dp"
+    android:background="@drawable/photobg4"
+    android:layout_margin="23dp"
+    android:gravity="center">
+
+<ImageView
+    android:id="@+id/wordimage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@drawable/ic_boyonpen"
+    android:layout_margin="50dp"
+    android:scaleType="fitXY"
+    android:layout_gravity="center"/>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:orientation="horizontal"
+        android:background="#FAEFFF"
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        >
+
+<Button
+    android:id="@+id/playimage"
+    android:layout_width="48dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ic_playbtn"
+    android:layout_gravity="center"
+    android:layout_marginEnd="25dp"/>
+        <Button
+            android:id="@+id/favbtn"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_favoritefiled"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="299dp"
+            android:layout_height="520dp"
+            android:background="@drawable/photobg3"
+            android:layout_marginStart="35dp"/>
+        <ImageView
+            android:layout_width="344dp"
+            android:layout_height="513dp"
+            android:background="@drawable/photobg2"
+            android:layout_marginStart="20dp"/>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="503dp"
+
+            android:background="@drawable/photobg" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="108dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout">
+
+
+        <TextView
+            android:id="@+id/texxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/semibold"
+            android:text="Saying Cat in English"
+            android:textColor="#333333"
+            android:textSize="18sp"
+            />
+
+        <Button
+            android:id="@+id/speakbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_microphone" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

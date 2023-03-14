@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/medium"
-        android:text="Choose Your Photo"
+        android:text="@string/chooseyourphoto"
         android:textColor="@color/text"
         android:textSize="24sp" />
 
@@ -88,7 +88,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/medium"
-        android:text="Pickup Your Avatar"
+        android:text="@string/pickupyouravatar"
         android:textColor="@color/text"
         android:textSize="24sp"
         android:layout_marginBottom="15dp"/>
@@ -160,7 +160,7 @@ app:errorTextColor="@color/errorRed"
         android:layout_width="311dp"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
-        android:hint="Enter Your Name"
+        android:hint="@string/enteryourname"
         app:endIconMode="clear_text"
         app:hintTextColor="#3F414E"
 
@@ -183,7 +183,7 @@ app:errorTextColor="@color/errorRed"
         android:layout_height="wrap_content"
         android:background="@drawable/getbtn"
         android:fontFamily="@font/medium"
-        android:text="Get Started"
+        android:text="@string/getstarted"
         android:textColor="@color/white"
         android:textSize="18sp" />
 </LinearLayout>

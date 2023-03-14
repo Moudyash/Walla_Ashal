@@ -45,11 +45,11 @@ class Beginneradapter(private val homelist: List<Beginner>) :
             if (tts.isSpeaking){
                 holder.imageButton.setBackgroundResource(R.drawable.ic_pause)
 
-            }else                 holder.imageButton.setBackgroundResource(R.drawable.ic_cplay)
+            }else if(!tts.isSpeaking)                 holder.imageButton.setBackgroundResource(R.drawable.ic_cplay)
 
         }
         holder.beginnercard.setOnClickListener(){
-            val intent = Intent(holder.itemView.context, PhotoActivity::class.java)
+            val intent = Intent(holder.itemView.context, PhotoActivity::class.java).putExtra("word", holder.english.text)
             holder.itemView.context.startActivity(intent)
 
         }

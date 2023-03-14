@@ -2,6 +2,7 @@ package com.moudy.alshafie
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.speech.tts.TextToSpeech
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -20,13 +21,13 @@ import java.util.concurrent.TimeUnit
 
 class MainActivity : AppCompatActivity() {
     private val workManager = WorkManager.getInstance(this.application)
-
     private lateinit var binding: ActivityMainBinding
     private lateinit var navController: NavController
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
         window.decorView.apply {
             // Hide both the navigation bar and the status bar.
             systemUiVisibility = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
@@ -37,6 +38,8 @@ class MainActivity : AppCompatActivity() {
             systemUiVisibility = systemUiVisibility or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
         }
         fireWorkerTodisplayNotification()
+        // Initialize TTS
+
 
         navController = Navigation.findNavController(this, R.id.activity_main_nav_host_fragment)
         setupWithNavController(binding.bottomNavigationView, navController)
@@ -49,7 +52,7 @@ class MainActivity : AppCompatActivity() {
 private fun fireWorkerTodisplayNotification() {
     val workRequest =
         PeriodicWorkRequest.Builder(NotificationWorker::class.java, 2, TimeUnit.MINUTES)
-            .setInitialDelay(8, TimeUnit.SECONDS)
+            .setInitialDelay(15, TimeUnit.SECONDS)
             .build()
     workManager.enqueueUniquePeriodicWork(
         "worker",
@@ -63,6 +66,7 @@ private fun loadFragment(fragment: Fragment) {
     transaction.replace(R.id.activity_main_nav_host_fragment, fragment)
     transaction.commit()
 }
+
 }
 
 

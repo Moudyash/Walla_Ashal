@@ -1,60 +1,111 @@
 package com.moudy.alshafie.Ui.Fragments
 
+import android.annotation.SuppressLint
+import android.content.Intent
+import android.graphics.BitmapFactory
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatDelegate
+import com.moudy.alshafie.DataBase.UserDatabaseHelper
+import com.moudy.alshafie.DataBase.UserDatabaseHelper.Companion.COL_ID
+import com.moudy.alshafie.DataBase.UserDatabaseHelper.Companion.COL_USERPHOTO
+import com.moudy.alshafie.DataBase.UserDatabaseHelper.Companion.TABLE_NAME
+import com.moudy.alshafie.MainActivity
 import com.moudy.alshafie.R
+import com.moudy.alshafie.Ui.SettingsActivitys.*
+import com.moudy.alshafie.databinding.FragmentFavoriteBinding
+import com.moudy.alshafie.databinding.FragmentSettingBinding
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [SettingFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class SettingFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
+    private lateinit var binding: FragmentSettingBinding
+    private lateinit var myDbHelper: UserDatabaseHelper
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_setting, container, false)
+        binding = FragmentSettingBinding.inflate(inflater, container, false)
+        context?.let {
+            myDbHelper = UserDatabaseHelper(it)
+        }
+        var username = ""
+        val cursor = myDbHelper.readableDatabase.rawQuery("SELECT username FROM users", null)
+        if (cursor != null && cursor.moveToFirst()) {
+            username = cursor.getString(0)
+            cursor.close()
+        }
+        binding.usernametv.text = username
+        onclicklay()
+        binding.contactlay.setOnClickListener(){
+            startActivity(Intent(requireContext(), ContactUs::class.java))
+
+        }
+        binding.darkmodeswitch.setOnCheckedChangeListener { _, isChecked ->
+            if (isChecked) {
+                // Enable dark mode
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+            } else {
+                // Disable dark mode
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+            }
+        }
+
+        binding.helplay.setOnClickListener(){
+            startActivity(Intent(requireContext(), Help::class.java))
+
+        }
+        binding.langlay.setOnClickListener(){
+            startActivity(Intent(requireContext(), ContactUs::class.java))
+
+        }
+        binding.privacylay.setOnClickListener(){
+            startActivity(Intent(requireContext(), PrivacyPolicy::class.java))
+
+        }
+        binding.termlay.setOnClickListener(){
+            startActivity(Intent(requireContext(), TermsofService::class.java))
+
+        }
+
+        binding.ratelay.setOnClickListener(){
+            startActivity(Intent(requireContext(), RateUs::class.java))
+
+        }
+        return binding.root
+
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment SettingFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            SettingFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+    @SuppressLint("Range")
+    private fun onclicklay() {
+
+        val db = myDbHelper.readableDatabase
+
+//Select query to retrieve the photo of the user with the given userId
+        val selectQuery = "SELECT $COL_USERPHOTO FROM $TABLE_NAME "
+
+//Execute the query and retrieve the result cursor
+        val cursor = db.rawQuery(selectQuery, null)
+
+        if (cursor.moveToFirst()) {
+            //Retrieve the photo bytes from the cursor
+            val photoBytes = cursor.getBlob(cursor.getColumnIndex(COL_USERPHOTO))
+
+            //Convert the photo bytes to a bitmap
+            val photoBitmap = BitmapFactory.decodeByteArray(photoBytes, 0, photoBytes.size)
+
+            //Set the photo bitmap as the profile photo
+            binding.setprofilePhoto.setImageBitmap(photoBitmap)
+        }
+
+//Close the cursor and the database
+        cursor.close()
+        db.close()
+
     }
+
 }
+

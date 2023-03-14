@@ -1,7 +1,10 @@
 package com.moudy.alshafie.Data.DataSets
 
- class WordsDataset {
+import java.util.*
+
+class WordsDataset {
      companion object {
+
      var BeginnerEN = arrayOf("Baby", "Mother", "Father", "Mom", "Home", "Cow", "Dog", "Play", "cat", "car", "sun", "top", "old", "good",
         "red", "into", "about", "apple", "milk", "show", "sick", "sky", "small", "snow", "food", "men", "mine", "fish", "shoe", "before", "Brother",
         "sister", "child", "club", "tree", "Moon", "night", "now", "here", "yes", "you", "dad", "day", "box", "stop", "bed", "long", "floor",
@@ -47,4 +50,26 @@ package com.moudy.alshafie.Data.DataSets
              "ماذا تعمل لقمة العيش؟","ما هي هواياتك؟","ماذا تفعل في وقت فراغك؟","أين تعيش؟","متى تعلمت ذلك؟",
              "ما هي نشاطاتك المفضلة في الصيف/الخريف/الشتاء/الربيع؟","ما الذي تستمتع به في وقت فراغك؟","ما الذي تحب القيام به في عطلة نهاية الأسبوع؟"
          )
-     }}
+         fun getNof(): String? {
+             var Homefragment = arrayOf("Baby", "Mother", "Father", "Mom", "Home", "Cow", "Dog", "Play", "cat", "car", "sun", "top", "old", "good",
+                 "red", "into", "about", "apple", "milk", "show", "sick", "sky", "small", "snow", "food", "men", "mine", "fish", "shoe", "before", "Brother",
+                 "sister", "child", "club", "tree", "Moon", "night", "now", "here", "yes", "you", "dad", "day", "box", "stop", "bed", "long", "floor",
+                 "soon", "some", "ask", "bag", "base", "fire", "many", "meat", "sing", "see", "sit", "toy", "after", "away", "back", "fly", "side", "lost", "sheep",
+                 "sing", "bike", "bird", "cake", "candy", "cold", "cry", "door", "dress", "funny", "fun", "hat", "pan", "Girl","Absent-minded", "Adventurous", "Arrogant", "Snobbish", "Conceited", "Bad-tempered", "Boring", "Brave", "Calm", "Cautious",
+                 "Cheerful", "Clever", "Confident", "Cowardly", "Crazy", "Dishonest", "Easy-going", "Emotional", "Friendly", "Funny", "Generous", "Good-humored",
+                 "Hard-working", "Honest", "Impatient", "Impolite", "Impulsive", "Intelligent", "Introverted", "Kind", "Lazy", "Mean", "Modest", "Moody", "Patient",
+                 "Polite", "Rude", "Sensible", "Sensitive", "Serious", "Shy", "Sophisticated", "Stupid", "Talented", "Unfriendly", "Witty", "Down to earth", "Accountant",
+                 "Actor", "Actress", "Air hostess", "Air stewardess", "Archeologist", "Artist", "Anthropologist", "Baker", "Ballerina", "Bank manager", "Barber", "Beautician",
+                 "Biologist", "Shoeshine", "Botanist", "Builder", "Butcher", "Buyer", "Carpenter", "Chef", "Chemist", "Chief of police", "Civil servant", "Clerk", "Composer",
+                 "Cook", "Copywriter", "Decorator",    "Hi / Hello","Good morning","Good afternoon","Good evening","How are you","Excuse me", "What is your name?","Where are you from?","How old are you?",
+                 "What do you do for a living?","What are your hobbies?","What do you do in your free time?","Where do you live?","When did you learn that?",
+                 "What's your favorite summer/fall/winter/spring activity?","What do you enjoy doing in your free time?","What do you like doing on the weekend?"
+             )
+             val idx = Random().nextInt(Homefragment.size)
+             return Homefragment[idx]
+         }
+     }
+
+
+
+ }

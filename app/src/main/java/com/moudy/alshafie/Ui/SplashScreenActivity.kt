@@ -1,9 +1,11 @@
 package com.moudy.alshafie.Ui
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.moudy.alshafie.MainActivity
 import com.moudy.alshafie.databinding.ActivitySplashScreenBinding
 
 class SplashScreenActivity : AppCompatActivity() {
@@ -22,8 +24,14 @@ class SplashScreenActivity : AppCompatActivity() {
 
         binding = ActivitySplashScreenBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        startActivity(Intent(this, StepsActivity::class.java))
-        finish()
+        val sharedPreferences = getSharedPreferences("myPrefs", Context.MODE_PRIVATE)
+        val isChecked = sharedPreferences.getBoolean("checked", false)
+        if (isChecked) {
+            startActivity(Intent(this, MainActivity::class.java))
+            finish()          } else {
+            startActivity(Intent(this, StepsActivity::class.java))
+            finish()        }
+
 
          }
 }

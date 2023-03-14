@@ -22,8 +22,9 @@
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
             app:navigationIcon="@drawable/ic_drawer"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-            app:title="Home"
+            app:title="@string/app_name"
             app:titleMarginStart="100dp"
+
             app:titleTextAppearance="@style/Toolbar.MainTitleText"
             app:titleTextColor="@color/bartitle"
             app:layout_scrollFlags="scroll|enterAlways"/>
