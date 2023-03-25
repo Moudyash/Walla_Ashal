@@ -53,13 +53,14 @@
     android:layout_margin="23dp"
     android:gravity="center">
 
-<ImageView
-    android:id="@+id/wordimage"
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/recyclerView"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="250dp"
     android:src="@drawable/ic_boyonpen"
     android:layout_margin="50dp"
     android:scaleType="fitXY"
+    tools:listitem="@layout/rv_item_layout"
     android:layout_gravity="center"/>
 
 </LinearLayout>
@@ -83,7 +84,7 @@
             android:id="@+id/favbtn"
             android:layout_width="48dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/ic_favoritefiled"
+            android:background="@drawable/ic_favorite"
             android:layout_gravity="center"/>
     </LinearLayout>
 

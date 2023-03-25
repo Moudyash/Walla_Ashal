@@ -8,12 +8,16 @@ import android.view.View
 import android.view.ViewGroup
 
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.moudy.alshafie.adapter.FavoriteAdapter
 import com.moudy.alshafie.databinding.FragmentFavoriteBinding
 
 
 class FavoriteFragment : Fragment() {
  private lateinit var binding:FragmentFavoriteBinding
-
+    private lateinit var favoriteRecyclerView: RecyclerView
+    private lateinit var favoriteAdapter: FavoriteAdapter
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -21,7 +25,9 @@ class FavoriteFragment : Fragment() {
     ): View? {
         binding = FragmentFavoriteBinding.inflate(inflater, container, false)
         return binding.root
-
+        favoriteRecyclerView=binding.favoriterv
+        //favoriteAdapter = FavoriteAdapter()
+        favoriteRecyclerView.adapter = favoriteAdapter
     }
 
   }
