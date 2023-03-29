@@ -15,11 +15,11 @@
         android:name="com.moudy.alshafie.Ui.Fragments.LearningFragment"
         android:label="fragment_learning"
         tools:layout="@layout/fragment_learning" />
-    <fragment
+   <!-- <fragment
         android:id="@+id/favoriteFragment"
         android:name="com.moudy.alshafie.Ui.Fragments.FavoriteFragment"
         android:label="fragment_favorite"
-        tools:layout="@layout/fragment_favorite" />
+        tools:layout="@layout/fragment_favorite" />-->
     <fragment
         android:id="@+id/settingsFragment"
         android:name="com.moudy.alshafie.Ui.Fragments.SettingFragment"

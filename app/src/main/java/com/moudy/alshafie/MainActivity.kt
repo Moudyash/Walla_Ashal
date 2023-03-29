@@ -1,6 +1,8 @@
 package com.moudy.alshafie
 
 import android.annotation.SuppressLint
+import android.content.Intent
+import android.content.IntentFilter
 import android.os.Bundle
 import android.speech.tts.TextToSpeech
 import android.view.View
@@ -15,6 +17,7 @@ import androidx.work.ExistingPeriodicWorkPolicy
 import androidx.work.PeriodicWorkRequest
 import androidx.work.WorkManager
 import com.moudy.alshafie.Worker.recevier.NotificationWorker
+import com.moudy.alshafie.Worker.recevier.ScreenReceiver
 import com.moudy.alshafie.databinding.ActivityMainBinding
 import java.util.concurrent.TimeUnit
 
@@ -27,7 +30,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+        val filter = IntentFilter(Intent.ACTION_SCREEN_ON)
+        val receiver = ScreenReceiver()
+        registerReceiver(receiver, filter)
         window.decorView.apply {
             // Hide both the navigation bar and the status bar.
             systemUiVisibility = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION

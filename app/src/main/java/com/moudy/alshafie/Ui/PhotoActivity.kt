@@ -43,9 +43,9 @@ class PhotoActivity : AppCompatActivity() {
 
     private lateinit var recyclerView: RecyclerView
     private val favoriteDatabaseHelper = FavoriteDatabaseHelper(this)
-    private  val COLUMN_WORD = "word"
-    private  val COLUMN_ArWORD = "worda"
-    private  val COLUMN_AeWORD = "wordae"
+//    private  val COLUMN_WORD = "word"
+//    private  val COLUMN_ArWORD = "worda"
+//    private  val COLUMN_AeWORD = "wordae"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -60,7 +60,7 @@ class PhotoActivity : AppCompatActivity() {
             // You can remove this line if you don't want to enable immersive mode.
             systemUiVisibility = systemUiVisibility or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
         }
-
+        word = intent.getStringExtra("word").toString()
         binding.texxt.setText("Saying $word in English")
         recyclerView = findViewById(R.id.recyclerView)
         recyclerView.layoutManager = GridLayoutManager(this, 1)
@@ -85,20 +85,20 @@ class PhotoActivity : AppCompatActivity() {
 
             }
 
-            val dbfav = favoriteDatabaseHelper.readableDatabase
-            val cursor = dbfav.rawQuery("SELECT * FROM favorite WHERE word = ?", arrayOf(word))
-            val isFavorite = cursor.count > 0
-            cursor.close()
-            dbfav.close()
-
-            if (isFavorite) {
-                binding.favbtn.setBackgroundResource(R.drawable.ic_favoritefiled)
-            } else {
-                binding.favbtn.setBackgroundResource(R.drawable.ic_favorite)
-            }
-            binding.favbtn.setOnClickListener() {
-                val added = addOrRemoveFavorite(word)
-            }
+//            val dbfav = favoriteDatabaseHelper.readableDatabase
+//            val cursor = dbfav.rawQuery("SELECT * FROM favorite WHERE word = ?", arrayOf(word))
+//            val isFavorite = cursor.count > 0
+//            cursor.close()
+//            dbfav.close()
+//
+//            if (isFavorite) {
+//                binding.favbtn.setBackgroundResource(R.drawable.ic_favoritefiled)
+//            } else {
+//                binding.favbtn.setBackgroundResource(R.drawable.ic_favorite)
+//            }
+//            binding.favbtn.setOnClickListener() {
+//                val added = addOrRemoveFavorite(word)
+//            }
 
         }
 
@@ -222,67 +222,67 @@ class PhotoActivity : AppCompatActivity() {
             }
         }
     }
-    fun deleteFavorite(word: String): Boolean {
-        val db = favoriteDatabaseHelper.writableDatabase
-        val selection = "$COLUMN_WORD = ?"
-        val selectionArgs = arrayOf(word)
-        val deletedRows = db.delete("favorite", selection, selectionArgs)
-        return deletedRows > 0
-    }
-    private fun addOrRemoveFavorite(word: String) {
-        val isFavorite = isFavorite(word)
-        if (isFavorite) {
-            // Remove the word from favorites
-            val deleted = deleteFavorite(word)
-            if (deleted) {
-                Toast.makeText(this, "Removed from favorites", Toast.LENGTH_SHORT).show()
-                binding.favbtn.setBackgroundResource(R.drawable.ic_favorite)
-            } else {
-                Toast.makeText(this, "Error removing from favorites", Toast.LENGTH_SHORT).show()
-            }
-        } else {
-            // Add the word to favorites
-            val added = addFavorite(word, wordar , wordae)
-            if (added) {
-                Toast.makeText(this, "Added to favorites", Toast.LENGTH_SHORT).show()
-                binding.favbtn.setBackgroundResource(R.drawable.ic_favoritefiled)
-            } else {
-                Toast.makeText(this, "Error adding to favorites", Toast.LENGTH_SHORT).show()
-            }
-        }
-    }
-    fun addFavorite(word: String,worda:String,wordae:String): Boolean {
-        if (isFavorite(word)) {
-            return false
-        }
-        val db = favoriteDatabaseHelper.writableDatabase
-        val values = ContentValues().apply {
-            put(COLUMN_WORD, word)
-            put(COLUMN_ArWORD, worda)
-            put(COLUMN_AeWORD, wordae)
-
-        }
-        val result = db.insert("favorite", null, values)
-        return result != -1L
-    }
-    fun isFavorite(word: String): Boolean {
-        val db = favoriteDatabaseHelper.readableDatabase
-        val columns = arrayOf(COLUMN_WORD)
-        val selection = "$COLUMN_WORD = ?"
-        val selectionArgs = arrayOf(word)
-        val cursor = db.query(
-            "favorite",
-            columns,
-            selection,
-            selectionArgs,
-            null,
-            null,
-            null
-        )
-        val count = cursor.count
-        cursor.close()
-        return count > 0
-    }
+//    fun deleteFavorite(word: String): Boolean {
+//        val db = favoriteDatabaseHelper.writableDatabase
+//        val selection = "$COLUMN_WORD = ?"
+//        val selectionArgs = arrayOf(word)
+//        val deletedRows = db.delete("favorite", selection, selectionArgs)
+//        return deletedRows > 0
+//    }
+//    private fun addOrRemoveFavorite(word: String) {
+//        val isFavorite = isFavorite(word)
+//        if (isFavorite) {
+//            // Remove the word from favorites
+//            val deleted = deleteFavorite(word)
+//            if (deleted) {
+//                Toast.makeText(this, "Removed from favorites", Toast.LENGTH_SHORT).show()
+//                binding.favbtn.setBackgroundResource(R.drawable.ic_favorite)
+//            } else {
+//                Toast.makeText(this, "Error removing from favorites", Toast.LENGTH_SHORT).show()
+//            }
+//        } else {
+//            // Add the word to favorites
+//            val added = addFavorite(word, wordar , wordae)
+//            if (added) {
+//                Toast.makeText(this, "Added to favorites", Toast.LENGTH_SHORT).show()
+//                binding.favbtn.setBackgroundResource(R.drawable.ic_favoritefiled)
+//            } else {
+//                Toast.makeText(this, "Error adding to favorites", Toast.LENGTH_SHORT).show()
+//            }
+//        }
+//    }
+//    fun addFavorite(word: String,worda:String,wordae:String): Boolean {
+//        if (isFavorite(word)) {
+//            return false
+//        }
+//        val db = favoriteDatabaseHelper.writableDatabase
+//        val values = ContentValues().apply {
+//            put(COLUMN_WORD, word)
+//            put(COLUMN_ArWORD, worda)
+//            put(COLUMN_AeWORD, wordae)
+//
+//        }
+//        val result = db.insert("favorite", null, values)
+//        return result != -1L
+//    }
+//    fun isFavorite(word: String): Boolean {
+//        val db = favoriteDatabaseHelper.readableDatabase
+//        val columns = arrayOf(COLUMN_WORD)
+//        val selection = "$COLUMN_WORD = ?"
+//        val selectionArgs = arrayOf(word)
+//        val cursor = db.query(
+//            "favorite",
+//            columns,
+//            selection,
+//            selectionArgs,
+//            null,
+//            null,
+//            null
+//        )
+//        val count = cursor.count
+//        cursor.close()
+//        return count > 0
+//    }
 
 
 }

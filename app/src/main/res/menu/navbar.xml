@@ -8,10 +8,10 @@
         android:id="@+id/learningFragment"
         android:icon="@drawable/ic_learning"
         android:title="Learning" />
-    <item
+   <!-- <item
         android:id="@+id/favoriteFragment"
         android:icon="@drawable/ic_favorite"
-        android:title="Favorite" />
+        android:title="Favorite" />-->
     <item
         android:id="@+id/settingsFragment"
         android:icon="@drawable/ic_settings"

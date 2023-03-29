@@ -23,6 +23,8 @@ class LearningFragment : Fragment() {
         binding.tabLayout.addTab(binding.tabLayout!!.newTab().setText("Beginner"))
         binding.tabLayout.addTab(binding.tabLayout!!.newTab().setText("Normal"))
         binding.tabLayout.addTab(binding.tabLayout!!.newTab().setText("Expert"))
+        binding.tabLayout.addTab(binding.tabLayout!!.newTab().setText("Colors"))
+
         binding.tabLayout!!.tabGravity = TabLayout.GRAVITY_FILL
 
         val adapter = LearningViewPagerAdapter(requireContext(), childFragmentManager, binding.tabLayout!!.tabCount)

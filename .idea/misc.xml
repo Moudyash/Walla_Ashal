@@ -8,6 +8,7 @@
         <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/drawable-v24/rounded_btn.xml" value="0.1" />
         <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/drawable-v24/shape_circle.xml" value="0.1635" />
         <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/drawable/btnbg.xml" value="0.1475" />
+        <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/drawable/c.xml" value="0.1585" />
         <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/drawable/circle.xml" value="0.1585" />
         <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/drawable/ic_arrow_back.xml" value="0.1585" />
         <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/drawable/ic_bg.xml" value="0.204" />
@@ -54,6 +55,7 @@
         <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/activity_termsof_service.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/activity_welcome.xml" value="0.2571428571428571" />
         <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/fragment_beginner.xml" value="0.2" />
+        <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/fragment_colors.xml" value="0.109375" />
         <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/fragment_expert.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/fragment_favorite.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/fragment_first.xml" value="0.25416666666666665" />
@@ -64,6 +66,7 @@
         <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/fragment_setting.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/item_stepper.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/itembeginner.xml" value="0.264" />
+        <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/itemcolor.xml" value="0.264" />
         <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/itemconversation.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/itemfavorite.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Medo/Desktop/bodoor/app/src/main/res/layout/itemhome.xml" value="0.2" />

@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import com.moudy.alshafie.Ui.Fragments.Levels.BeginnerFragment
+import com.moudy.alshafie.Ui.Fragments.Levels.ColorsFragment
 import com.moudy.alshafie.Ui.Fragments.Levels.ExpertFragment
 import com.moudy.alshafie.Ui.Fragments.Levels.NormalFragment
 
@@ -23,6 +24,10 @@ class LearningViewPagerAdapter(private val myContext: Context, fm: FragmentManag
             2 -> {
                 // val movieFragment = MovieFragment()
                 return ExpertFragment()
+            }
+            3 -> {
+                // val movieFragment = MovieFragment()
+                return ColorsFragment()
             }
             else -> return BeginnerFragment()
         }
